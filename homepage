@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Rodney-Home</title>
+	<meta charset="utf-8">
+			<style>
+		h1 {text-align:center; background-color:aqua; color:red; border:solid 4px gold;font-size:40px; border-radius: 15px;box-shadow: 5px 5px 15px black}
+    	h2 { color:red;}
+		body {background: linear-gradient(aqua, gold); background-color: yellow}
+		p {background-color:; font-size:20px; color:red}
+		table {box-shadow: 5px 5px 15px red; border:solid 1px ; font-size:10px; color:red; border-radius:5px;width:100%;text-align:center; background-color:gold;}
+		.wrapper {text-align:center}
+		#header { text-align: center; color: #FFFFFF; padding: 20px; margin: 20px;}
+		#leftcolumn { float: left; width: 300px; border: 2px red solid; color: #FFFFFF;}
+		#rightcolumn { margin-left: 150px;}
+		.homepage {text-align:center;}
+			</style>
+</head>
+
+<body>
+	<div id="header">
+			<h1>Rodney Ngoh</h1>
+		</div>
+	<div id="wrapper">
+		<table border="2">
+		<tr>
+			<td><a href="RodneyHomePage.html"><h2>Home<h2></a></td>
+			<td><a href="rodneyonthefield.html"><h2>On the Field<h2></a></td>
+			<td><a href="RodneySurvey.html"><h2>Survey<h2></a></td>
+			<td><a href="rodneyoffthefield.html"><h2>Off the Field<h2></a></td>
+			<td><a href="Fan.html"><h2>Rodney Fan Club<h2></a></td>
+		</tr>
+	</table> <br>
+		<h2 style="text-align:center"> Home Page </h2>
+			<div id="leftcolumn">
+				<h2>Brief Bio</h2>
+				<p class="homepage">
+					Rodney Ngoh is a freshman at Marymount University in Arlington, Virginia. Ngoh is from Fort Washington, Maryland, where he attended Crossland High School. He is planning on majoring in Information Technology. Rodney plays soccer for the University where his position is in the defense and he wears number 4.
+				</p>
+			</div>
+			<div id="rightcolumn">
+				<img src="http://static.psbin.com/c/h/93t5chqj5aou5n/NgohVaSID.jpg" alt="Rodney on the Field" height="322" width="600">
+			</div>
+			<div id="footer">
+			</div>
+
+</body>
+
+</html>
