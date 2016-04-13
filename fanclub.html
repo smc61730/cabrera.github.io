@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
- <head>
-    <meta charset="utf-8">
-    <title>Rodney</title>
-    <style>
-    form { background-color:#eaeaea; width: 800px; font-family: Arial, sans-serif; padding: 10px;}
-label { float: left; width: 150px;
-text-align: right; padding-right: 10px; margin-top: 10px; }
-input, textarea { margin-top: 10px; margin-left:10px} #mySubmit { margin-left: 110px; }
-    </style>
- </head>
- <body>
-        <h1>JOIN THE RODNEY FAN CLUB </h1>
-<form>
-                        <label for="name">Name:</label>
-                        <input tabindex="1" type="text" id="name" name="name"><br />
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" size="20"><br /><br />
-                        <label for="Gender">Gender:</label>
-                        <input tabindex="1" type="text" id="Gender" name="Gender"><br />
-                        <label for="Age">Age:</label>
-                        <input tabindex="1" type="text" id="Age" name="Age"><br />
-                         <label for="Month">Birthday Month:</label>
-                        <input tabindex="1" type="text" id="Month" name="Month"><br />
+    <head>
+        <meta charset="utf-8">
+        <title>Rodney</title>
+        <style>
+            #container {
+                max-width: 940px;
+                margin: 0 auto;
+            }
+            h1 {
+                text-align: center;
+            }
+            form {
+                background-color: #eaeaea;
+                width: 100%;
+                font-family: Arial, sans-serif;
+                padding: 10px;
+            }
+            label {
+                float: left;
+                width: 150px;
+                text-align: right;
+                padding-right: 10px;
+                margin-top: 10px;
+            }
+            input, textarea {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
 
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>JOIN THE RODNEY FAN CLUB </h1>
+            <form>
+                    <label for="name">Name:</label>
+                    <input tabindex="1" type="text" id="name" name="name"><br />
 
-               
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" size="20"><br /><br />
 
-        </form>
- </body>
+                    <label for="Gender">Gender:</label>
+                    <input tabindex="1" type="text" id="gender" name="Gender"><br />
+                    <label for="Age">Age:</label>
+                    <input tabindex="1" type="text" id="age" name="Age"><br />
+                    <label for="Month">Birthday Month:</label>
+                    <input tabindex="1" type="text" id="month" name="Month"><br />
+
+                <input type="submit" name="Submit" onclick="return submitInformation()" />
+            </form>
+        </div>
+
+        <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+        <script>
+            var firebaseReference = new Firebase("https://popping-inferno-5603.firebaseio.com/");
+
+            function submitInformation() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var gender = document.getElementById('gender').value;
+                var age = document.getElementById('age').value;
+                var month = document.getElementById('month').value;
+
+                var membersList = firebaseReference.child('members');
+
+                membersList.push().set({
+                    name: name,
+                    email: email,
+                    gender: gender,
+                    age: age,
+                    month: month
+                }, function(error){
+                    if (error) {
+                        console.log(error);
+                    } else {
+                        console.log('Data written sucessfully!');
+                    }
+                });
+            }
+        </script>
+    </body>
 </html>
