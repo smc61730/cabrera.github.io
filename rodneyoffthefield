@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en" xml:lang="en"> 
+ <head> 
+    <meta charset="utf-8"> 
+    <title>Rodney</title> 
+    <style>
+    h1 {text-align:center; background-color:aqua; color:red; border:solid 4px gold;font-size:40px; border-radius: 15px;box-shadow: 5px 5px 15px black}
+    h2 { color:red;}
+	body {background: linear-gradient(aqua, gold); background-color: yellow}
+	p {background-color:; font-size:20px; color:red}
+	table {box-shadow: 5px 5px 15px red; border:solid 1px ; font-size:10px; color:red; border-radius:5px;width:100%;text-align:center; background-color:gold;}
+	.wrapper {text-align:center}
+	</style>
+	</head>
+	<body>
+	<h1> Rodney Ngoh</h1>
+	<div class="wrapper">
+	<table border="2">
+		<tr>
+			<td><a href="onthefield.html"><h2>On the Field<h2></a></td>
+			<td><a href="survey.html"><h2>Survey<h2></a></td>
+			<td><a href="offthefield.html"><h2>Off the Field<h2></a></td>
+			<td><a href="Fan.html"><h2>Rodney Fan Club<h2></a></td>
+			<td><a href="interview.html"><h2>Interview<h2></a></td>
+	</tr>
+	</table></br>
+	<h2>Rodney’s Life off the field</h2> <br> <p>Off the field, Rodney loves to play Fifa. He currently holds the record for the highest points scored at Marymount. Rodney also loves playing board games, and can be commonly seen playing twister or monopoly with his fellow hall mates.</p><br>
+	<img src="http://sad.hasbro.com/db7312c97e69f2aa2a48e9c156bbc05885942775/e80625c59f576f511fb28aca83719ac3.png"></br></br> 
+	<p> Many may not know, but Rodney aslo has an artistic side, and he can be commonly seen painting and drawing.</p>
+	<img src="http://science-all.com/images/mona-lisa/mona-lisa-06.jpg"></br></br> 
+
+	</body>
+</html>
